@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  background: #f4f7fb;
+  color: #253238;
+}
+
+header {
+  background: linear-gradient(120deg, #04AA6D, #058457);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Problem 1: nav bar links */
+nav {
+  margin-top: 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+section {
+    background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+section h2 {
+  margin-top: 0;
+  color: #04AA6D;
+}
+
+
+ /* store hours section */
+.hours-section {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* store hours table */
+table {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+
+th, td {
+  border: 1px solid #dce3ea;
+  padding: 10px;
+}
+th {
+  background: #04AA6D;
+  color: #fff;
+}
+ 
+footer {
+  padding: 24px;
+  text-align: center;
+  background: #e8edf4;
+  font-size: 0.9rem;
+}
+
+/* Problem 5: social media buttons in footer */
+.social-links {
+  margin: 12px 0;
+}
+.social-links a {
+  display: inline-block;
+  background: #04AA6D;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0 6px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+.social-links a:hover {
+  background: #058457;
+}
+
+/* iframes (YouTube video + Google Map) */
+iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 0;
+}
+
+/* Problem 4: CSS Flexbox - two columns side by side */
+.flex-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.flex-columns section {
+  flex: 1;
+  min-width: 250px;
+}
+/* products page price list */
+.price-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.price-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #dce3ea;
+}
+.price-list li:last-child {
+  border-bottom: none;
+}

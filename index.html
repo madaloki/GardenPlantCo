@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First Website</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+  <header>
+    <h1>Garden Plant Co.</h1>
+
+    <!-- Problem 1: nav section using anchor tags and href -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="#about">About Us</a>
+      <a href="#hours">Store Hours</a>
+      <a href="#video">Video</a>
+      <a href="#location">Find Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- garden img-->
+  <style>
+    img{
+      display:block;
+      margin:auto;
+    }
+  </style>
+
+  <h1 class="image-section">
+  <img src="garden.jpg" alt="This is a picture of a garden."
+  width="500" height="300" class="image-section">
+  </h1>
+  <!--end-->
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Garden Plant Co. has been helping neighbors grow healthier, happier gardens since 2015.
+        What started as a small family plant stand has grown into a full-service shop offering everything from seasonal flowers and vegetable starters to expert lawn and garden care.
+        We believe every yard, big or small, deserves a little green magic. Our friendly staff loves sharing tips with first-time gardeners and seasoned green thumbs alike.
+        Whether you're planting your first tomato or redesigning your backyard, we're here to help it thrive. Stop by, say hello, and let's grow something great together.</p>
+    </section>
+
+    <!-- Store Hours -->
+    <section class="hours-section" id="hours">
+      <h2>Store Hours</h2>
+
+      <!-- Problem 2: hours of operation shown as three separate tables -->
+      <h3>Weekdays</h3>
+      <table>
+        <tr align="center">
+          <th width="100">Monday</th>
+          <th width="100">Tuesday</th>
+          <th width="100">Wednesday</th>
+          <th width="100">Thursday</th>
+          <th width="100">Friday</th>
+        </tr>
+        <tr align="center">
+          <td>9am-5pm</td>
+          <td>9am-5pm</td>
+          <td>9am-5pm</td>
+          <td>9am-5pm</td>
+          <td>9am-5pm</td>
+        </tr>
+      </table>
+
+      <h3>Saturday</h3>
+      <table>
+        <tr align="center">
+          <th width="100">Saturday</th>
+        </tr>
+        <tr align="center">
+          <td>9am-5pm</td>
+        </tr>
+      </table>
+
+      <h3>Sunday</h3>
+      <table>
+        <tr align="center">
+          <th width="100">Sunday</th>
+        </tr>
+        <tr align="center">
+          <td>Closed</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Problem 3: YouTube video iframe -->
+    <!--
+      HOW TO ADD YOUR YOUTUBE VIDEO YOURSELF:
+      1. Go to your video on YouTube and click "Share" then "Embed".
+      2. Copy the src link YouTube gives you (it looks like
+         https://www.youtube.com/embed/VIDEO_ID).
+      3. Paste that link into the iframe src="" below, replacing the
+         placeholder link.
+      4. You can delete this comment once your video is added.
+    -->
+    <section id="video">
+      <h2>Watch Our Garden Tour</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/watch?v=eZSjgbN6SGw"
+        title="Garden Plant Co. video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <!-- Problem 3: Google Map iframe -->
+    <section id="location">
+      <h2>Find Us</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.google.com/maps?q=Glassboro,NJ&output=embed"
+        title="Garden Plant Co. location map"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action = "index.php" method = "POST">
+
+      <label for = "email">Email:</label>
+
+      <input type = "text" id ="email" minlength="8" required>
+      <input type="reset">
+      <input type = "submit">
+      </form>
+
+    </section>
+  </main>
+
+  <!-- Problem 5: contact info + social media buttons in footer -->
+  <footer>
+    <p>Garden Plant Co. | 123 Garden Lane, Glassboro, NJ 08028</p>
+    <p>Phone: (555) 123-4567 | Email: info@gardenplantco.com</p>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+    </div>
+    <p>Copyright Reserved Garden Plant Co. 2026</p>
+  </footer>
+</body>
+</html>
